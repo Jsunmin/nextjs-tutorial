@@ -17,6 +17,7 @@ export async function getServerSideProps(context: { req: IncomingMessage, res: S
 // 외부 페이지 연결시 그냥 a 사용하기! (Link X) / 클래스 같은 속성 추가시도 link 안 a에 attr을 넣자!
 export default function FirstPost() {
     console.log(arguments, 'in FirstPost')
+    // throw new Error('test')
     return (
     <Layout>
         <Head>

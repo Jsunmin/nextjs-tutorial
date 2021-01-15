@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default function Layout({ children, home }: Props) {
-    console.log(children, home, 'in layout')
+    // console.log(children, home, 'in layout')
     return (
         <div className={styles.container}>
             <Head>
