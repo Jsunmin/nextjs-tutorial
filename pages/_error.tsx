@@ -1,3 +1,5 @@
+import { NextPageContext } from 'next';
+
 function Error({ statusCode }: { statusCode: string }) {
   return (
     <p>
@@ -8,7 +10,7 @@ function Error({ statusCode }: { statusCode: string }) {
   )
 }
 
-Error.getInitialProps = ({ res, err }) => {
+Error.getInitialProps = ({ res, err }: NextPageContext) => {
   console.log("err!?!?!")
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
   return { statusCode }
